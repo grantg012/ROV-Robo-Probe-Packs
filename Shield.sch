@@ -1263,6 +1263,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="35.56" y="99.06" size="1.778" layer="91">ESC connections</text>
 <text x="43.18" y="83.82" size="1.778" layer="91">ESC solder bridges or header connections</text>
 <text x="182.88" y="22.86" size="1.778" layer="91">https://www.arduino.cc/en/uploads/Main/arduino-mega2560-schematic.pdf</text>
+<text x="15.24" y="93.98" size="1.778" layer="91">Capacitors (multiple sizes)</text>
+<text x="15.24" y="91.44" size="1.778" layer="91">Optional flyback diodes</text>
+<text x="33.02" y="170.18" size="1.778" layer="91">Reverse voltage protection</text>
+<text x="76.2" y="144.78" size="1.27" layer="91">Power LEDs</text>
+<text x="289.56" y="66.04" size="1.27" layer="91">Don't forget labels :)</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1319,6 +1324,62 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="195.58" y1="139.7" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
 <junction x="195.58" y="139.7"/>
 <label x="195.58" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_SIG1" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="9"/>
+<wire x1="203.2" y1="60.96" x2="200.66" y2="60.96" width="0.1524" layer="91"/>
+<label x="200.66" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_SIG2" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="10"/>
+<wire x1="203.2" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<label x="200.66" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_SIG3" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="11"/>
+<wire x1="203.2" y1="55.88" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
+<label x="200.66" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_SIG4" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="6"/>
+<wire x1="203.2" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
+<label x="200.66" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_SIG5" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="5"/>
+<wire x1="203.2" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
+<label x="200.66" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ESC_SIG6" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="3"/>
+<wire x1="203.2" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
+<label x="200.66" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PWM1" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="7"/>
+<wire x1="203.2" y1="66.04" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
+<label x="200.66" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PWM2" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="8"/>
+<wire x1="203.2" y1="63.5" x2="200.66" y2="63.5" width="0.1524" layer="91"/>
+<label x="200.66" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
