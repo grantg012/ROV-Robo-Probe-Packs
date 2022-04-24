@@ -19,4 +19,4 @@ Features include:
 
 ## Parts List
 * Arduino Uno or Mega
-
+* Anderson power pole to PCB (1377G12 or similar)
