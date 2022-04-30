@@ -7880,6 +7880,10 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="J29" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
 <part name="J30" library="Anderson PP" deviceset="ANDERON_POWERPOLE_2" device=""/>
+<part name="C13" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37415/1" value="100uF"/>
+<part name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37415/1" value="100uF"/>
+<part name="GND31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND32" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8025,16 +8029,16 @@ for I2C logic level</text>
 <instance part="GND17" gate="1" x="33.02" y="68.58" smashed="yes">
 <attribute name="VALUE" x="33.02" y="68.326" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="J17" gate="G$1" x="7.62" y="33.02" smashed="yes">
-<attribute name="VALUE" x="5.08" y="28.194" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="5.08" y="38.608" size="1.778" layer="95" font="vector"/>
+<instance part="J17" gate="G$1" x="7.62" y="35.56" smashed="yes">
+<attribute name="VALUE" x="5.08" y="30.734" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="5.08" y="41.148" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J18" gate="G$1" x="7.62" y="15.24" smashed="yes">
 <attribute name="VALUE" x="5.08" y="10.414" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="5.08" y="20.828" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND18" gate="1" x="17.78" y="27.94" smashed="yes">
-<attribute name="VALUE" x="17.78" y="27.686" size="1.778" layer="96" align="top-center"/>
+<instance part="GND18" gate="1" x="17.78" y="30.48" smashed="yes">
+<attribute name="VALUE" x="17.78" y="30.226" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND19" gate="1" x="17.78" y="10.16" smashed="yes">
 <attribute name="VALUE" x="17.78" y="9.906" size="1.778" layer="96" align="top-center"/>
@@ -8087,12 +8091,26 @@ for I2C logic level</text>
 <attribute name="NAME" x="170.18" y="7.62" size="1.016" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="170.18" y="2.54" size="1.016" layer="95" align="top-center"/>
 </instance>
-<instance part="J29" gate="J$1" x="50.8" y="20.32" smashed="yes">
-<attribute name="VALUE" x="48.26" y="12.954" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="48.26" y="25.908" size="1.778" layer="95" font="vector"/>
+<instance part="J29" gate="J$1" x="55.88" y="17.78" smashed="yes">
+<attribute name="VALUE" x="53.34" y="10.414" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="53.34" y="23.368" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J30" gate="G$1" x="7.62" y="152.4" smashed="yes">
 <attribute name="NAME" x="5.08" y="155.448" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="C13" gate="G$1" x="30.48" y="20.32" smashed="yes">
+<attribute name="NAME" x="31.496" y="20.955" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="31.496" y="16.129" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C14" gate="G$1" x="40.64" y="20.32" smashed="yes">
+<attribute name="NAME" x="41.656" y="20.955" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="41.656" y="16.129" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND31" gate="1" x="30.48" y="10.16" smashed="yes">
+<attribute name="VALUE" x="30.48" y="9.906" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND32" gate="1" x="40.64" y="10.16" smashed="yes">
+<attribute name="VALUE" x="40.64" y="9.906" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -8216,14 +8234,24 @@ for I2C logic level</text>
 </segment>
 <segment>
 <pinref part="J17" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="33.02" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="17.78" y1="33.02" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J29" gate="J$1" pin="2"/>
-<wire x1="58.42" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
-<label x="60.96" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="63.5" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
+<label x="66.04" y="17.78" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="-"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+<wire x1="30.48" y1="15.24" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND32" gate="1" pin="GND"/>
+<pinref part="C14" gate="G$1" pin="-"/>
+<wire x1="40.64" y1="12.7" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="1">
@@ -8293,8 +8321,13 @@ for I2C logic level</text>
 </segment>
 <segment>
 <pinref part="J29" gate="J$1" pin="1"/>
-<wire x1="58.42" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
-<label x="60.96" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="63.5" y1="15.24" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
+<label x="66.04" y="15.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="+"/>
+<wire x1="40.64" y1="22.86" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+<label x="40.64" y="25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ESC_SIG1" class="0">
@@ -8390,18 +8423,23 @@ for I2C logic level</text>
 </segment>
 <segment>
 <pinref part="J17" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
-<label x="17.78" y="35.56" size="1.778" layer="95" xref="yes"/>
+<wire x1="15.24" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="17.78" y="38.1" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J29" gate="J$1" pin="3"/>
-<wire x1="58.42" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
-<label x="60.96" y="22.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="63.5" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
+<label x="66.04" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="J30" gate="G$1" pin="POS"/>
 <label x="20.32" y="152.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="+"/>
+<wire x1="30.48" y1="22.86" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
+<label x="30.48" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND_RAW" class="0">
