@@ -8059,12 +8059,16 @@ Or connect and external one with wires</text>
 https://www.arduino.cc/en/uploads/Main/arduino-mega2560-schematic.pdf</text>
 <text x="81.28" y="170.18" size="1.778" layer="91">Reverse voltage protection</text>
 <text x="129.54" y="160.02" size="1.778" layer="91">Voltage Testpoints and power indicator LEDs</text>
-<text x="289.56" y="66.04" size="1.27" layer="91">Don't forget labels :)</text>
+<text x="289.56" y="66.04" size="5.08" layer="91">Don't forget labels :)
+LIGHTS?</text>
 <text x="116.84" y="81.28" size="1.778" layer="91">I2C Breakout &amp; Connectors</text>
 <text x="127" y="38.1" size="1.778" layer="91">PWM Connectors</text>
 <text x="144.78" y="10.16" size="1.27" layer="91">Mounting holes</text>
 <text x="60.96" y="101.6" size="1.778" layer="91" align="top-left">Populate eiter JP5 or JP6 (not both)
 for I2C logic level</text>
+<text x="106.68" y="86.36" size="1.778" layer="91">NEED NEW REVISION CONNECTOR?
+DOUBLE CHECK PINOUT ISN'T MIRRORED</text>
+<text x="55.88" y="-38.1" size="5.08" layer="91">NEED NEW REVISION CONNECTOR FOR I2C?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -8742,7 +8746,7 @@ for I2C logic level</text>
 <label x="63.5" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="A4_SDA" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="A4"/>
 <wire x1="203.2" y1="114.3" x2="200.66" y2="114.3" width="0.1524" layer="91"/>
@@ -8751,7 +8755,7 @@ for I2C logic level</text>
 <pinref part="JP3" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="A5_SCL" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="A5"/>
 <wire x1="203.2" y1="111.76" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
@@ -8760,7 +8764,7 @@ for I2C logic level</text>
 <wire x1="200.66" y1="109.22" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="I2C_VCC" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="60.96" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
@@ -8773,6 +8777,7 @@ for I2C logic level</text>
 <pinref part="JP6" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
 <junction x="76.2" y="63.5"/>
+<label x="66.04" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
